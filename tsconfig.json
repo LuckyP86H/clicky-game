@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"exactOptionalPropertyTypes": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "bundler",
+		"noUncheckedIndexedAccess": true,
+		"strict": true,
+		"types": ["$app/types", "node"],
+		"paths": {
+			"#lib/*": ["./src/lib/*"]
+		}
+	},
+	"exclude": ["src/service-worker"],
+	"extends": "$app/tsconfig",
+	"include": ["src", "e2e", "*"]
+}
