@@ -9,6 +9,22 @@ SvelteKit + Cloudflare Workers stack, with three game modes, an AI deck
 curator, a judgment-model-gated validation pipeline, an AI host, and a
 Redis-backed leaderboard.
 
+## See it in action
+
+![Classic gameplay: clicking cards, the board shuffling after each click, the score climbing, and the AI host reacting](docs/demo/gameplay.gif)
+
+*Classic mode — click every card exactly once, the board reshuffles after each click, and the AI host reacts to the run.*
+
+![AI deck curator: type a theme and watch the agent build a deck](docs/demo/curator.gif)
+
+*The deck curator agent — type a theme ("deep sea animals") and watch it search, validate, and assemble a playable deck, streamed step by step. Recorded offline, so it honestly falls back to a labelled demo deck.*
+
+![Leaderboard and stats: bust a run, submit the score, and review memory-training stats](docs/demo/leaderboard.gif)
+
+*Bust a run, put your score on the leaderboard, then review your progress: achievements and memory-training stats.*
+
+All three clips are real recordings of the production build running locally in demo mode — no API keys, scripted host, demo judge, in-memory leaderboard.
+
 ## How to play
 
 - **Classic** — 12 cards. Click each once; a repeat busts the run.
