@@ -1,0 +1,33 @@
+:root {
+	--bg: #0b1020;
+	--panel: #151b31;
+	--card-bg: #1a2140;
+	--card-border: #2c3866;
+	--ink: #eef1ff;
+	--ink-dim: #9aa5cc;
+	--accent: #f7c948;
+	color-scheme: dark;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background:
+		radial-gradient(900px 480px at 15% -10%, #23306e 0%, transparent 60%),
+		radial-gradient(700px 420px at 95% 0%, #3b2a63 0%, transparent 55%), var(--bg);
+	color: var(--ink);
+	font-family:
+		ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	min-height: 100vh;
+}
+
+button {
+	font: inherit;
+}
+
+input {
+	font: inherit;
+}

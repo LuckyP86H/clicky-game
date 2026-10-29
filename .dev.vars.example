@@ -1,0 +1,24 @@
+# Copy to .dev.vars for local development (wrangler dev) — every value is OPTIONAL.
+# With none of them set, the game runs fully in demo mode: scripted AI host,
+# generated demo decks for the curator, and an in-memory leaderboard.
+
+# AI host — Gemini adapter (https://aistudio.google.com/apikey)
+# GEMINI_API_KEY=
+# GEMINI_MODEL=gemini-2.0-flash
+
+# AI host — OpenAI-compatible adapter (any /chat/completions endpoint)
+# HOST_LLM_BASE_URL=https://api.openai.com/v1
+# HOST_LLM_API_KEY=
+# HOST_LLM_MODEL=gpt-4o-mini
+
+# Jev judgment model — TypeSafe (https://console.typesafe.ai)
+# Gates curator candidates (Noul relevance/appropriateness + fit Choice) and
+# picks the host's tone (Choice) and drama (Score). Without a key, the
+# deterministic demo judge answers instead and is labelled "demo" everywhere.
+# TYPESAFE_API_KEY=
+# TYPESAFE_MODEL=jev-latest
+# TYPESAFE_BASE_URL=https://api.typesafe.ai
+
+# Leaderboard — Upstash Redis REST (https://console.upstash.com)
+# UPSTASH_REDIS_REST_URL=
+# UPSTASH_REDIS_REST_TOKEN=
